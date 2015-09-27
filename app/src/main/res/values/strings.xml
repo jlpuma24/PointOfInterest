@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
     <string name="app_name">PointOfInterest</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <!--Message the user gets when the application is launched-->
+    <string name="welcome_msg">Welcome to the Test</string>
+    <!--Wait message-->
+    <string name="wait_message">Please wait a moment</string>
+    <!--Loader notification-->
+    <string name="downloading_title">Downloading</string>
+    <!--Location format-->
+    <string name="location_format">lat: <xliff:g id="lat">%1$s</xliff:g>, long: <xliff:g id="long">
+        %2$s</xliff:g></string>
 
 </resources>

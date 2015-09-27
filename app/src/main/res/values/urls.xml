@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+
+    <!--Base URL-->
+    <string name="url_base">http://t21services.herokuapp.com/points</string>
+
+    <!--Extended URL-->
+    <string name="url_extended">http://t21services.herokuapp.com/points/<xliff:g id="id">%s</xliff:g></string>
+
+</resources>

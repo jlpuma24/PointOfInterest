@@ -19,7 +19,7 @@ public class SqliteDb extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
-        sqLiteDatabase.execSQL("CREATE TABLE" + Constants.TABLE_NAME_PLACES +
+        sqLiteDatabase.execSQL("CREATE TABLE " + Constants.TABLE_NAME_PLACES +
             " (" + Constants.ID_PLACES + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
             Constants.NAME_PLACES + " TEXT, " +
             Constants.LON_PLACES + " TEXT, " +

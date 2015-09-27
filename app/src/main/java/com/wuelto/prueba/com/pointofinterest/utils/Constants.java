@@ -17,7 +17,7 @@ public class Constants {
     public static final String LON_PLACES = "longitude";
     public static final String LAT_PLACES = "latitude";
     public static final String DESC_PLACES = "description";
-    public static final String INDEX_PLACES = "index";
+    public static final String INDEX_PLACES = "json_index";
 
     // Json Reading
     public static final String LIST ="list";

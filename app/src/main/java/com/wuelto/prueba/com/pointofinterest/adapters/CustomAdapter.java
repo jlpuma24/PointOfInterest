@@ -56,7 +56,7 @@ public class CustomAdapter extends BaseAdapter {
             v = mLayoutInflater.inflate(R.layout.row_list, null);
             viewHolder = new ViewHolder();
             viewHolder.textViewPlace = (TextView) v.findViewById(R.id.list_item_place_textview);
-            viewHolder.textViewLocation = (TextView) v.findViewById(R.id.list_item_place_textview);
+            viewHolder.textViewLocation = (TextView) v.findViewById(R.id.list_item_location_textview);
             v.setTag(viewHolder);
         }
         else {

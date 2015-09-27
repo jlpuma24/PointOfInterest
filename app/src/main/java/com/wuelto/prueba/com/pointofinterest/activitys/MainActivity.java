@@ -38,6 +38,8 @@ public class MainActivity extends Activity {
         try {
             if (intent.getStringExtra("search") != null) {
                 searchText = intent.getStringExtra("search");
+                ((EditText)findViewById(R.id.search_text)).setText(searchText);
+
             }
             else {
                 searchText = "";
@@ -62,7 +64,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        if (ConnectionManager.isConnected() && mDataBaseHelper.select()!= null) {
+        if (ConnectionManager.isConnected() && mDataBaseHelper.select().isEmpty()) {
             mJsonFileAsyncTask = new FetchJsonAsyncTask(this);
             mJsonFileAsyncTask.execute();
         } else {
@@ -107,4 +109,10 @@ public class MainActivity extends Activity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+        searchText = "";
+        ((EditText)findViewById(R.id.search_text)).setText(searchText);
+        notifyFinishingAsyncTask(false);
+    }
 }
